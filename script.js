@@ -71,7 +71,7 @@ const products = [
     name: "Gura Masala Combo (Mini Pack)",
     category: "অন্যান্য",
     price: 985,
-    image: "assets/masala-combo.jpg"
+    image: "assets/gura-masala.jpg"
   },
   {
     id: 11,
