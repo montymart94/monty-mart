@@ -8,7 +8,7 @@ const products = [
     name: "খাঁটি দেশি ঘি 1kg",
     category: "ঘি",
     price: 1200,
-    image: "assets/ghee.jpg"
+    image: "assets/ghee-1kg.png"
   },
   {
     id: 2,
