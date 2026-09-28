@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Monty Mart — Your Trust, Our Quality</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="topbar wrap">
+    <a class="brand" href="#"><img src="assets/logo.png" alt="Monty Mart"><div><b>MONTY MART</b><span>Your Trust, Our Quality</span></div></a>
+    <div class="search"><input id="search" placeholder="পণ্য খুঁজুন..." autocomplete="off"><button id="searchBtn" aria-label="Search">⌕</button></div>
+    <div class="head-actions"><button class="head-btn" id="loginBtn">👤<small>লগইন</small></button><button class="head-btn">♡<small>উইশলিস্ট</small></button><button class="head-btn cart-mini" id="cartBtn">🛒<i id="cartCount">0</i><small>কার্ট</small></button><button class="head-btn" id="menuBtn">☰<small>মেনু</small></button></div>
+  </div>
+  <nav><div class="wrap navin"><a href="#home">হোম</a><a href="#products" data-cat="ঘি">ঘি</a><a href="#products" data-cat="মধু">মধু</a><a href="#products" data-cat="জিরা">জিরা</a><a href="#products" data-cat="চিড়া">চিড়া</a><a href="#products" data-cat="বাদাম">বাদাম</a><a href="#products" data-cat="কাঠবাদাম">কাঠবাদাম</a><a href="#products">অন্যান্য</a></div></nav>
+</header>
+<main class="wrap" id="home">
+  <section class="hero hero-banner"><img src="assets/hero-banner.png" alt="Monty Mart — প্রকৃতির সেরা উপহার এখন আপনার ঘরে"><button class="hero-shop" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">পণ্য দেখুন →</button></section>
+  <div class="trust"><div>🚚 <b>দ্রুত ডেলিভারি</b><span>সারা বাংলাদেশ</span></div><div>🛡️ <b>মানসম্মত পণ্য</b><span>যত্নসহকারে বাছাই</span></div><div>🔒 <b>ক্যাশ অন ডেলিভারি</b><span>সহজ ও নিরাপদ অর্ডার</span></div></div>
+  <section class="layout" id="products">
+    <aside class="sidebar"><h3>☰ পণ্যের বিভাগ</h3><a href="#products" data-cat="ঘি">🧈 ঘি <b>›</b></a><a href="#products" data-cat="মধু">🍯 মধু <b>›</b></a><a href="#products" data-cat="জিরা">🌿 জিরা <b>›</b></a><a href="#products" data-cat="কাঠবাদাম">🥜 কাঠবাদাম <b>›</b></a><a href="#products" data-cat="চিড়া">🌾 চিড়া <b>›</b></a><a href="#products" data-cat="বাদাম">🥜 বাদাম <b>›</b></a><a href="#products" data-cat="বাদাম">🥜 চিনাবাদাম / পিনাট <b>›</b></a><a href="#products">📦 অন্যান্য <b>›</b></a><div class="side-note">🌿 <strong>খাঁটি পণ্য</strong><span>সুস্থ জীবনের জন্য</span></div></aside>
+    <section class="products"><div class="section-head"><div><h2>আমাদের পণ্যসমূহ</h2><p>পছন্দের পণ্য বেছে পরিমাণ ঠিক করুন</p></div><select id="sort"><option>Default Sorting</option><option>দাম: কম থেকে বেশি</option><option>দাম: বেশি থেকে কম</option></select></div><div class="grid" id="grid"></div></section>
+    <aside class="order" id="order"><div class="order-title">🛒 আপনার অর্ডার <span id="itemsText">0 পণ্য</span></div><div id="cartItems" class="cart-items"><div class="empty">আপনার কার্ট এখনো খালি।<br>পণ্য যোগ করুন।</div></div><div class="totals"><div>Subtotal <b id="subtotal">৳ 0</b></div><div>ডেলিভারি চার্জ <b id="delivery">৳ 70</b></div><div class="total">Total <b id="total">৳ 70</b></div></div><div class="checkout"><h3>🚚 ডেলিভারি তথ্য</h3><label>ডেলিভারি এলাকা<select id="area"><option value="70">ঢাকার ভিতরে (৳ 70)</option><option value="120">ঢাকার বাইরে (৳ 120)</option></select></label><input id="name" placeholder="আপনার নাম লিখুন *"><input id="phone" placeholder="01XXXXXXXXX *"><textarea id="address" placeholder="সম্পূর্ণ ঠিকানা লিখুন *"></textarea><label class="cod">◉ Cash on Delivery</label><button id="confirm">🛒 অর্ডার কনফার্ম করুন</button></div></aside>
+  </section>
+</main>
+<a class="chat" href="#" id="chatBtn">💬 <span>মেসেজ করুন</span></a>
+<footer><div class="wrap foot"><div><img src="assets/logo.png"><b>MONTY MART</b><span>Your Trust, Our Quality</span></div><p>© 2026 Monty Mart. All Rights Reserved.</p><div>📞 +880 1XXXXXXXXX<br>✉ montymart@gmail.com</div></div></footer>
+<div class="toast" id="toast"></div>
+<div class="overlay" id="overlay"></div>
+<div class="drawer" id="drawer"><div class="drawer-head"><b>মেনু</b><button id="closeMenu">✕</button></div><a href="#home">হোম</a><a href="#products">সব পণ্য</a><a href="#order">অর্ডার করুন</a><a href="#products" data-cat="ঘি">ঘি</a><a href="#products" data-cat="মধু">মধু</a><a href="#products" data-cat="বাদাম">বাদাম</a></div>
+<div class="modal" id="loginModal"><div class="modal-card"><button class="modal-close" data-close>✕</button><h2>লগইন / অ্যাকাউন্ট</h2><p>মোবাইল নম্বর দিয়ে আপনার অ্যাকাউন্টে প্রবেশ করুন।</p><input id="loginPhone" inputmode="numeric" maxlength="11" placeholder="01XXXXXXXXX"><button class="primary" id="loginSubmit">লগইন করুন</button><div class="login-status" id="loginStatus"></div></div></div>
+<script src="script.js"></script>
+</body></html>
